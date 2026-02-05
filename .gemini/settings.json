@@ -1,0 +1,17 @@
+{
+    "general": {
+        "previewFeatures": true
+    },
+    "model": {
+        "name": "gemini-3-pro-preview"
+    },
+    "mcpServers": {
+        "chrome-devtools": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "chrome-devtools-mcp@latest"
+            ]
+        }
+    }
+}

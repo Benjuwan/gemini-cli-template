@@ -2,6 +2,9 @@
 Gemini CLI の私用テンプレートリポジトリです。  
 `chrome-devtools-mcp`MCPを入れていて、`GEMINI.md`も汎用的な内容にしています。
 
+## 技術構成
+- @google/gemini-cli@0.27.0
+
 ## [Gemini モデル](https://ai.google.dev/gemini-api/docs/models?hl=ja)について
 - `/model`コマンドでGeminiのモデルを選択・変更可能
 - `.gemini/settings.json`で明示的にモデルを選択・変更可能
