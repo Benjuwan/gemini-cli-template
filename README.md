@@ -1,3 +1,5 @@
+# gemini-cli-template
+
 ## [Gemini モデル](https://ai.google.dev/gemini-api/docs/models?hl=ja)について
 - `/model`コマンドでGeminiのモデルを選択・変更可能
 - `.gemini/settings.json`で明示的にモデルを選択・変更可能
