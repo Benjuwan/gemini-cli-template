@@ -1,4 +1,6 @@
 # gemini-cli-template
+Gemini CLI の私用テンプレートリポジトリです。  
+`chrome-devtools-mcp`MCPを入れていて、`GEMINI.md`も汎用的な内容にしています。
 
 ## [Gemini モデル](https://ai.google.dev/gemini-api/docs/models?hl=ja)について
 - `/model`コマンドでGeminiのモデルを選択・変更可能
@@ -124,5 +126,3 @@ Code Assist、CLI、Jules（非同期エージェント）がすべて稼働す�
 | CLI | Operator（実務者）<br />ターミナルでの自律操作 | AI（対話型） | `cat` で流し込み、または `gchat` 関数 |
 | Jules | Worker（担当者）<br />GitHub Issue ベースの非同期作業 | AI（非同期） | リポジトリに含まれていれば自動参照 |
 | Antigravity | Workspace（仕事場）<br />上記すべてが動く統合環境 | Team | ルートに置くだけ（環境全体がコンテキスト） |
-"# gemini-cli-template" 
-"# gemini-cli-template" 
