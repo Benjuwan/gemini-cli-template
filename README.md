@@ -3,7 +3,7 @@ Gemini CLI の私用テンプレートリポジトリです。
 `chrome-devtools-mcp`MCPを入れていて、`GEMINI.md`も汎用的な内容にしています。
 
 ## 技術構成
-- @google/gemini-cli@0.27.3
+- @google/gemini-cli@0.28.2
 
 ## [Gemini モデル](https://ai.google.dev/gemini-api/docs/models?hl=ja)について
 - `/model`コマンドでGeminiのモデルを選択・変更可能
@@ -129,3 +129,27 @@ Code Assist、CLI、Jules（非同期エージェント）がすべて稼働す�
 | CLI | Operator（実務者）<br />ターミナルでの自律操作 | AI（対話型） | `cat` で流し込み、または `gchat` 関数 |
 | Jules | Worker（担当者）<br />GitHub Issue ベースの非同期作業 | AI（非同期） | リポジトリに含まれていれば自動参照 |
 | Antigravity | Workspace（仕事場）<br />上記すべてが動く統合環境 | Team | ルートに置くだけ（環境全体がコンテキスト） |
+
+## Gemini CLI セッション・履歴管理メモ
+Gemini CLI (`gemini`) での会話履歴の保存・復元に関する主要コマンドです。
+
+### 1. 対話中（インタラクティブモード）の操作
+プロンプト入力時に以下のスラッシュコマンドを使用します。
+
+| コマンド | 内容 |
+| :--- | :--- |
+| `/chat save <tag>` | 現在のセッションに名前（タグ）を付けて保存 |
+| `/chat list` | 保存済みセッションの一覧を表示 |
+| `/chat resume <tag>` | 指定したタグのセッションを読み込んで再開 |
+| `/clear` | 現在の履歴をリセットし、新規セッションを開始 |
+| `/stats` | 現在のトークン消費量などの統計を表示 |
+
+### 2. 起動時のオプション
+ターミナルから直接セッションを復元して起動する場合に使用します。
+
+```bash
+# 直近のセッションを再開
+npx gemini --resume
+
+# 特定のセッションIDやインデックスを指定して再開
+npx gemini --resume <session_id_or_index>
