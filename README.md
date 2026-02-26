@@ -3,15 +3,15 @@ Gemini CLI の私用テンプレートリポジトリです。
 `chrome-devtools-mcp`MCPを入れていて、`GEMINI.md`も汎用的な内容にしています。
 
 ## 技術構成
-- @google/gemini-cli@0.28.2
+- @google/gemini-cli@0.30.0
 
 ## [Gemini モデル](https://ai.google.dev/gemini-api/docs/models?hl=ja)について
 - `/model`コマンドでGeminiのモデルを選択・変更可能
 - `.gemini/settings.json`で明示的にモデルを選択・変更可能
 
 ## `settings.json`でのMCP設定
-- `y`オプション
-`args`の先頭に "-y" を入れておくと npx 実行時に「インストールしますか？」という確認で作業が進まないを防げる。
+- `y`オプション  
+`args`の先頭に "-y" を入れておくと npx 実行時に「インストールしますか？」という確認で作業が進まないことを防げる。
 ```json
 "mcpServers": {
     "chrome-devtools": {
@@ -74,7 +74,7 @@ IDE 内でコーディング支援を受ける際（copilot用途）は、明示
 
 - GEMINI.md について尋ねた内容
 ```bash
- GEMINI.md を読み込んでいますか？そうであれば一部を端的に要約説明して
+GEMINI.md を読み込んでいますか？そうであれば一部を端的に要約説明して
 
 ✦ はい、GEMINI.md の内容はコンテキストとして読み込んでおり、把握しております。
   このファイルは、本プロジェクトにおける私（AI アシスタント）の行動指針であり、要約すると...
